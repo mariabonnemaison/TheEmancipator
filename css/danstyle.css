@@ -1,76 +1,104 @@
 #header {
     background-color: #30453E;
-    height: 2in;
     margin: 0;
-    width: 100%;
     padding-left: 16px;
+    padding-top: 30px;
+    background-position: 50% 100%;
+    height: 5in;
+    padding-right:  16px;
+    display: flex;
+    flex-flow: column wrap;
+  
 }
 
 head {
     margin:0;
 }
-#logo {
-    position: relative;
+
+.logo {
+    order:1;
+    margin-top: 1.5in;
     margin-right: auto;
     display: block; 
     width:30%;
     height:max-content;
-    top:1in;
     margin-left: 4vh;
     
 
 }
 
+.container {
+    display:flex;
+    flex-wrap: nowrap;
+    margin-right: 1in;
+   
+
+}
+
+#bot {
+    
+    margin-right: auto;
+    margin-left:auto ;
+}
 #poster {
-    width: 40%;
+    width: 10%;
     height: max-content;
     display:block;
-    margin-right: auto;
-    margin-left: auto;
+    flex:2;
+    flex-shrink: 2;
+    
+    
 
 }
 
 h2 {
     font-family: "IvarHeadline-Regular";
     text-align: left;
-    margin-left: 0.5in;
+    margin-left: 1in;
     font-size: 2em;
 }
 p { 
     
     font-family: "Staff-Regular";
     text-align: left;
-    margin-left: 0.5in;
+    margin-left: 1in;
     font-size: 1em;
-
-}
-#headline {
+    line-height: 5vh;
     
-    height: 2in;
-    width: 100%;
-    padding-left: 16px;
-    padding-right:  16px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    background-color: #30453E;
 
 
 }
+
+#text{
+    font-family: "Staff-Regular";
+    text-align: left;
+    margin-right: 1in;
+
+    font-size: 1em;
+    flex:1;
+    line-height: 5vh;
+    flex-grow: 2;
+}
+
+
 .item1 {
-    order:1;
+    order:2;
     font-family: "Staff-Regular", "Times", serif ;
     color: RGB(246,242,225);
-    font-size: 3em;
-    text-align: center;
+    font-size: 4em;
+    text-align: left;
     line-height: 2vh;
+    margin-top: 1in;
+    margin-left: 4vh;
 }
 
 .item2{
-    order:2;
+    order:3;
     font-family: "Staff-Regular", "Times", serif;
     color: RGB(246,242,225);
-    text-align: center;
+    text-align: left;
+    line-height: 2vh;
+    margin-left: 4vh;
 }
 body {
     margin: 0;

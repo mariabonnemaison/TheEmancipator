@@ -3,44 +3,49 @@
     <head>
         <meta charset="utf-8"/>
         <title>VoteChat</title>
-        <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
         <link rel="stylesheet" type="text/css" href="./css/danstyle.css">
         <script src="https://d3js.org/d3.v7.min.js"></script>
         
         <!-- header -->
         <div id="header"> 
-            <img id="logo" src="./Emancipator_color_logos/Emancipator_Logo_2c_Reversed.png">
+            <img class="logo" src="./Emancipator_color_logos/Emancipator_Logo_2c_Reversed.png">
+            <h1 class="item1">Welcome to VoteChat</h1>
+            <h2 class="item2">Chat with me to learn how voter laws may affect you this election cycle.</h2>
               
         </div>
     </head>
     <body >
-        <div id="headline">
-            <h1 class="item1">Welcome to VoteChat</h1>
-            <h2 class="item2">Chat with me to learn how voter laws may affect you this election cycle.</h2>
-        </div>
+        
         <div>
             <h2>What is VoteChat?</h2>
             <p> VoteChat was created in partnership with Northeastern University to inform new voters
                  on current and changing voting laws that either expand or suppress voter accessibility.</p>
-        </div>
+            <div class="container">
+                 <p id="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut nisi ante. Morbi leo odio, vulputate ut diam non, tempor interdum purus. Fusce lacinia erat sed metus semper dignissim. Mauris blandit arcu urna, in sollicitudin odio elementum in. Duis arcu libero, posuere at dui ac, aliquam porta felis. Vestibulum ornare magna non lacinia vestibulum. Phasellus imperdiet id nibh at iaculis. In mi ipsum, ullamcorper vitae volutpat et, imperdiet sed velit. In blandit, nisl sed ultrices rutrum, enim sem fringilla magna, a lobortis lectus velit vitae turpis. Donec a dolor ut nibh aliquam ultrices sed at nunc.
 
-        <div>
-            <img id="poster" src="./ProtectYourVote FINAL copy.png">
-        </div>
-<script>
+                Curabitur dictum felis non massa consectetur, nec blandit quam interdum. Curabitur elit augue, sodales quis felis quis, egestas rhoncus ligula. Curabitur scelerisque neque id aliquet molestie. Aliquam sed accumsan odio, et volutpat ante. Integer leo lacus, tempus eu quam vel, feugiat ultricies eros. Pellentesque maximus, nibh eu facilisis pretium, sapien neque lobortis turpis, nec suscipit augue tortor sed nisl. Morbi in justo quis nulla vehicula volutpat sit amet sit amet libero. Nulla efficitur laoreet egestas. Sed tempus ex eu lectus vehicula commodo. Nam convallis enim sem, at euismod leo ultricies eu. Aenean arcu tortor, condimentum eget diam eu, dictum dictum eros.
+                
+                Aliquam vitae rutrum velit, quis ornare nisi. Donec quam quam, dapibus non condimentum eu, placerat in eros. 
+                
+                </p>
+                <img id="poster" src="./ProtectYourVote FINAL copy.png">
+            </div>
+            </div>
 
-    var bannerPosition = d3.scaleLinear()
-  .domain ([ 0, window.innerHeight])
-  .range([100, 0]);
+        
+            <div id="botsify-embed-div"></div>
+            <script>
+            !function() {
+            var t; if (t = window.botsify_embed = window.botsify_embed = window.botsify_embed || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Botsify snippet included twice.")) : (
+            t.load =function(e,s,bg){ var o,n;  o=document.createElement("script"); e.type="text/javscript"; o.async=!0; o.crossorigin="anonymous";
+            o.src="https://app.botsify.com/web-bot/script/embed/"+e+"/"+s+"/"+bg+"/botsify.js"; n=document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(o,n); });
+            }(); botsify_embed.load('9UVFg15lPLNeGzsYGdaBwGOZt8Fw36BSMb49teKh','STORY_ID-676386','rgba(49, 70, 63, 1)');
+            </script>
+        
+        
+  </div>
+      
 
-  d3.select(window)
-  .on("scroll", function() {
-
-    var y = bannerPosition(window.scrollY);
-    d3.select("#headline")
-      .style("background-position", "50% " + y + "%");
-
-  });
-</script>
+        <script src="./parallax.js"></script>
     </body>
     </html>
