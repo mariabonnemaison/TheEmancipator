@@ -4,20 +4,43 @@
         <meta charset="utf-8"/>
         <title>VoteChat</title>
         <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
-        <link rel="stylesheet" type="text/css" href="css/danstyle.css">
+        <link rel="stylesheet" type="text/css" href="./css/danstyle.css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
         
         <!-- header -->
         <div id="header"> 
-            <img id="logo" src="Emancipator_Logo_2c.png">
+            <img id="logo" src="./Emancipator_color_logos/Emancipator_Logo_2c_Reversed.png">
               
         </div>
     </head>
     <body >
         <div id="headline">
-            <h1>This is my headline</h1>
-            <h2>Byline</h2>
-        
+            <h1 class="item1">Welcome to VoteChat</h1>
+            <h2 class="item2">Chat with me to learn how voter laws may affect you this election cycle.</h2>
+        </div>
+        <div>
+            <h2>What is VoteChat?</h2>
+            <p> VoteChat was created in partnership with Northeastern University to inform new voters
+                 on current and changing voting laws that either expand or suppress voter accessibility.</p>
         </div>
 
+        <div>
+            <img id="poster" src="./ProtectYourVote FINAL copy.png">
+        </div>
+<script>
+
+    var bannerPosition = d3.scaleLinear()
+  .domain ([ 0, window.innerHeight])
+  .range([100, 0]);
+
+  d3.select(window)
+  .on("scroll", function() {
+
+    var y = bannerPosition(window.scrollY);
+    d3.select("#headline")
+      .style("background-position", "50% " + y + "%");
+
+  });
+</script>
     </body>
     </html>
