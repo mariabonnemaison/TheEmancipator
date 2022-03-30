@@ -1,0 +1,44 @@
+#header {
+    background-color: rgb(246, 242, 225);
+    height: 2in;
+    margin: -10px;;
+}
+
+#logo {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+    width:50%;
+    height:max-content;
+    top: 0.5in;
+    
+}
+
+h1 {
+    font-family: "IvarHeadline-Regular", "Times", serif ;
+    color: white;
+    font-size: 4em;
+    text-align: left;
+    margin-left: 2in;
+    line-height: 1em;
+}
+
+h2 { 
+    font-family: "staffregular";
+    color: white;
+    margin-left: 2in;
+
+}
+#headline {
+    background-color: #30453E;
+    height: 2in;
+    width: 200%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    padding-right:  16px;
+
+    
+
+}
