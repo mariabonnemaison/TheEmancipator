@@ -3,7 +3,7 @@
     margin: 0;
     padding-left: 16px;
     padding-top: 30px;
-    background-position: 50% 100%;
+    width: 100%;
     height: 5in;
     padding-right:  16px;
     display: flex;
@@ -69,7 +69,7 @@ p {
 
 }
 
-#text{
+.body{
     font-family: "Staff-Regular";
     text-align: left;
     margin-right: 1in;
@@ -104,4 +104,48 @@ body {
     margin: 0;
     background-color: white;
 
+}
+
+
+.start {
+    background-color: cornflowerblue;
+    width: 100%;
+    height: 2in;
+    padding: 25px;
+    margin-top: 1in;
+   
+
+}
+#blue {
+    font-family: "Staff-Regular";
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    top: 2;
+    
+
+}
+
+h3 {
+    font-family: "Staff-Regular";
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    top: 4in;
+    line-height: 2vh
+}
+   
+
+#botsify-embed-div {
+    margin: 0;
+    width: 100%;
+    padding:10% 0% 10% 35%;
+   background-size: cover;
+   background-color: cornflowerblue;
+}
+
+.beige{
+    background-color: bisque;
+    height: 6in;
+    width: 100;
 }
