@@ -27,6 +27,13 @@ head {
 
 }
 
+#VoteChat {
+    position: sticky;
+    top: 0in; 
+    height: 1in;
+    width: max-content;
+}
+
 .container {
     display:flex;
     flex-wrap: nowrap;
@@ -87,7 +94,7 @@ p {
     color: RGB(246,242,225);
     font-size: 4em;
     text-align: left;
-    line-height: 2vh;
+    line-height: 6vh;
     margin-top: 1in;
     margin-left: 4vh;
 }
@@ -97,7 +104,7 @@ p {
     font-family: "Staff-Regular", "Times", serif;
     color: RGB(246,242,225);
     text-align: left;
-    line-height: 2vh;
+    line-height: 4vh;
     margin-left: 4vh;
 }
 body {
@@ -112,11 +119,11 @@ body {
     width: 100%;
     height: 2in;
     padding: 25px;
-    margin-top: 1in;
+    margin: 1in 0 0 0;
    
 
 }
-#blue {
+#sub {
     font-family: "Staff-Regular";
     color: white;
     font-size: 1.5em;
@@ -137,10 +144,9 @@ h3 {
    
 
 #botsify-embed-div {
-    margin: 0;
+    margin: 0 0 0 0;
     width: 100%;
     padding:10% 0% 10% 35%;
-   background-size: cover;
    background-color: cornflowerblue;
 }
 
