@@ -94,9 +94,10 @@ p {
     color: RGB(246,242,225);
     font-size: 4em;
     text-align: left;
-    line-height: 6vh;
+    line-height: 6px;
     margin-top: 1in;
     margin-left: 4vh;
+    
 }
 
 .item2{
@@ -148,5 +149,12 @@ h3 {
     width: 100%;
     padding: 2% 0% 2% 35%;
    background-color: cornflowerblue;
+}
+
+#datawrapper-chart-rP8uE {
+    padding: 2% 0% 2% 30%;
+    font-family: "Staff-Regular";
+    font-size: 2em;
+    
 }
 
